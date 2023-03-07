@@ -1,0 +1,58 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context=".ComputeBMIFragment">
+	<TableRow>
+	<TextView
+		android:id="@+id/computeBMIHeightsLabel"
+		android:textStyle="bold"
+		android:background="#EEFFBB"
+		android:text="Heights:" />
+	<EditText
+		android:id="@+id/computeBMIHeightsField"
+		android:layout_span="4" />
+	</TableRow>
+	<TableRow>
+	<TextView
+		android:id="@+id/computeBMIWeightLabel"
+		android:textStyle="bold"
+		android:background="#EEFFBB"
+		android:text="Weight:" />
+	<EditText
+		android:id="@+id/computeBMIWeightField"
+		android:layout_span="4" />
+	</TableRow>
+	<TableRow>
+	<Button
+		android:id="@+id/computeBMIOK"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="#AAAAFF"
+		android:layout_column="1"
+		android:text="OK"
+		android:onClick="computeBMIOK" />
+	<Button
+		android:id="@+id/computeBMICancel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="#FFAAAA"
+		android:layout_column="3"
+		android:text="Cancel"
+		android:onClick="computeBMICancel" />
+	</TableRow>
+						    
+	<TableRow>
+	<TextView
+		android:id="@+id/computeBMIResultLabel"
+		android:textStyle="bold"
+		android:background="#EEFFBB"
+		android:text="Result:" />
+	<TextView
+		android:id="@+id/computeBMIResult"
+		android:textStyle="bold"
+		android:layout_span="4" />
+	</TableRow>
+
+</TableLayout>

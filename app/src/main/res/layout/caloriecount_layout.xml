@@ -1,0 +1,74 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context=".CalorieCountFragment">
+		    <TableRow>
+				 <TextView
+				             android:id="@+id/calorieCountGenderLabel"
+				             android:textStyle="bold"
+				             android:background="#EEFFBB"
+				             android:text="Gender:" />
+				 <Spinner
+				             android:id="@+id/calorieCountGenderSpinner"
+				             android:layout_width="fill_parent"
+				             android:layout_height="wrap_content"
+				             android:layout_span="4" />
+			</TableRow>
+
+		    <TableRow>
+				 <TextView
+				             android:id="@+id/calorieCountExerciseLabel"
+				             android:textStyle="bold"
+				             android:background="#EEFFBB"
+				             android:text="Exercise:" />
+				 <Spinner
+				             android:id="@+id/calorieCountExerciseSpinner"
+				             android:layout_width="fill_parent"
+				             android:layout_height="wrap_content"
+				             android:layout_span="4" />
+			</TableRow>
+
+	<TableRow>
+	<TextView
+		android:id="@+id/calorieCountTimesLabel"
+		android:textStyle="bold"
+		android:background="#EEFFBB"
+		android:text="Times:" />
+	<EditText
+		android:id="@+id/calorieCountTimesField"
+		android:layout_span="4" />
+	</TableRow>
+	<TableRow>
+	<Button
+		android:id="@+id/calorieCountOK"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="#AAAAFF"
+		android:layout_column="1"
+		android:text="OK"
+		android:onClick="calorieCountOK" />
+	<Button
+		android:id="@+id/calorieCountCancel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="#FFAAAA"
+		android:layout_column="3"
+		android:text="Cancel"
+		android:onClick="calorieCountCancel" />
+	</TableRow>
+						    
+	<TableRow>
+	<TextView
+		android:id="@+id/calorieCountResultLabel"
+		android:textStyle="bold"
+		android:background="#EEFFBB"
+		android:text="Result:" />
+	<TextView
+		android:id="@+id/calorieCountResult"
+		android:textStyle="bold"
+		android:layout_span="4" />
+	</TableRow>
+
+</TableLayout>
