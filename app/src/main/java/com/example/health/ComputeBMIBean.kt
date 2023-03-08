@@ -21,6 +21,7 @@ class ComputeBMIBean(c: Context) {
     }
 
     fun resetData() {
+	    //resetData
     }
 
     fun isComputeBMIError(): Boolean {
