@@ -1,8 +1,6 @@
 package com.example.health
 
 import android.content.Context
-import java.util.ArrayList
-
 
 class ModelFacade private constructor(context: Context) {
 
