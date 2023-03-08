@@ -21,6 +21,7 @@ class CalorieCountBean(c: Context) {
     }
 
     fun resetData() {
+	    //restData
     }
 
     fun isCalorieCountError(): Boolean {
