@@ -18,15 +18,15 @@ class ModelFacade private constructor(context: Context) {
     }
     
     fun computeBMI(heights: Double, weight: Double): Double {
-	      var result = 0.0
+	      var result : Double
           result  = weight / (heights * heights)
 	return result
 	}
 	          
     fun calorieCount(exercise: String, times: Double): Double {
-	      var result = 0.0
+	      var result : Double
         var factor: Double
-          factor  = 1.0
+
         if (exercise == "walking") {
 	            factor  = 100.0
         } else {
