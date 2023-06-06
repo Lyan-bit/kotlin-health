@@ -45,7 +45,7 @@ class ComputeBMIBean(c: Context) {
 		//validation
 	}
 	else { errors.add("ComputeBMI: weight > 0.0") }
-        return errors.size > 0
+        return errors.isNotEmpty()
     }
 
     fun errors(): String {
